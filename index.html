@@ -3,76 +3,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigacija - Tvrtko Babić</title>
-
-    <!-- Vendors CSS -->
-    <link href="css/vendors/bootstrap-reboot.css" rel="stylesheet">
-    <link href="css/vendors/bootstrap-grid.css" rel="stylesheet">
-
+    
+    <title>Vježba 8 - Tvrtko Babić</title>
     <link href="style.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
-
-    <nav class="nav">
-        <div class="nav-holder">
-            <div class="nav-logo-wrapper">
-                <a class="nav-logo" href="#">
-                    <img src="img/logo.png" alt="Site Logo">
-                </a>
-            </div>
-            <div class="nav-list-wrapper">
-                <ul class="nav-list">
-                    <li class="nav-list-item active">
-                        <a href="#page-1.html">Naslovnica</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="#page-2.html">Proizvodi</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="#page-3.html">O nama</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a href="#page-4.html">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
+    <main>
+        <div id="section1">
+            <picture>
+                <source media="(min-width:600px) and (max-width:900px)"
+                        srcset="img/magnus-medium-screen.jpeg">
+                <source media="(min-width:901px)"
+                        srcset="img/magnus-large-screen.jpeg">
+                <img src="img/magnus-small-screen.jpeg" alt="Magnus">
+            </picture>
         </div>
-    </nav>
+        <div id="section2">
+            <img
+                src="img/aronian-small-screen.jpeg" 
+                srcset="img/aronian-small-screen.jpeg 600w,
+                        img/aronian-medium-screen.jpeg 900w,
+                        img/aronian-large-screen.jpeg 1100w"
+                sizes="100vw"
+                alt="Aronian"
+            >
 
-    <div class="nav-icons">
-        <ul class="icon-list">
-            <li class="icon-item">
-                <a href="#"><img src="icons/search_icon.svg" alt="icon"></a>
-            </li>
-            <li class="icon-item">
-                <a href="#"><img src="icons/user_icon.svg" alt="icon"></a>
-            </li>
-            <li class="icon-item">
-                <a href="#"><img src="icons/cart_icon.svg" alt="icon"></a>
-            </li>
-            <li class="icon-item">
-                <div class="nav-toggler-wrapper">
-                    <button class="nav-toggler" aria-label="Open/Close Navigation">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <script type="text/javascript">
-        var nav = document.querySelector('nav.nav'),
-            navToggler = document.querySelector('button.nav-toggler');
-
-        navToggler.addEventListener('click', function() {
-            this.classList.toggle('open');
-            nav.classList.toggle('open');
-        });
-    </script>
+            <img
+                src="img/aronian-small-screen.jpeg" 
+                srcset="img/aronian-small-screen.jpeg 600w,
+                        img/aronian-medium-screen.jpeg 900w,
+                        img/aronian-large-screen.jpeg 1100w"
+                sizes="100vw"
+                alt="Aronian"
+            >
+        </div>
+    </main>
 </body>
 </html>
