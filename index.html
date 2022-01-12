@@ -4,39 +4,195 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Vježba 8 - Tvrtko Babić</title>
+    <title>Projekt - Tvrtko Babić</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <link href="sidebar.css" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div id="section1">
-            <picture>
-                <source media="(min-width:600px) and (max-width:900px)"
-                        srcset="img/magnus-medium-screen.jpeg">
-                <source media="(min-width:901px)"
-                        srcset="img/magnus-large-screen.jpeg">
-                <img src="img/magnus-small-screen.jpeg" alt="Magnus">
-            </picture>
-        </div>
-        <div id="section2">
-            <img
-                src="img/aronian-small-screen.jpeg" 
-                srcset="img/aronian-small-screen.jpeg 600w,
-                        img/aronian-medium-screen.jpeg 900w,
-                        img/aronian-large-screen.jpeg 1100w"
-                sizes="100vw"
-                alt="Aronian"
-            >
 
-            <img
-                src="img/aronian-small-screen.jpeg" 
-                srcset="img/aronian-small-screen.jpeg 600w,
-                        img/aronian-medium-screen.jpeg 900w,
-                        img/aronian-large-screen.jpeg 1100w"
-                sizes="100vw"
-                alt="Aronian"
-            >
+    <nav class="nav">
+        <div class="nav-holder">
+            <div class="nav-logo-wrapper">
+                <a class="nav-logo" href="#">
+                    <img src="img/logo.png" alt="Site Logo">
+                </a>
+            </div>
+            <div class="nav-list-wrapper">
+                <ul class="nav-list">
+                    <li class="nav-list-item active">
+                        <a href="index.html">Naslovnica</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="proizvodi.html">Proizvodi</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <div class="nav-icons">
+        <ul class="icon-list">
+            <li class="icon-item">
+                <a href="#"><img src="img/icons/search_icon.svg" alt="icon"></a>
+            </li>
+            <li class="icon-item">
+                <a href="#"><img src="img/icons/user_icon.svg" alt="icon"></a>
+            </li>
+            <li class="icon-item">
+                <a href="#"><img src="img/icons/cart_icon.svg" alt="icon"></a>
+            </li>
+            <li class="icon-item">
+                <div class="nav-toggler-wrapper">
+                    <button class="nav-toggler" aria-label="Open/Close Navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="container-fluid px-5 my-5" id="hero-section">
+            <div class="row">
+                <div class="col-5 my-auto" id="hero-section-text">
+                    <h1>Dobrodošli u MeetMiu!</h1>
+                    <p>Uživajte u našoj ponudi raznovrsnih torta, kolača i brunch-a</p>
+                    <a href="proizvodi.html" class="button">Proizvodi</a>
+                </div>
+                <div class="col-7">
+                    <img src="img/proizvodi/hero-img.jpg" alt="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid p-5" id="naslovna-kategorije">
+            <h2 class="text-center py-3">Naša ponuda</h2>
+            <div class="row g-5">
+                <div class="col-4 item">
+                    <img src="img/proizvodi/torte.jpg" alt="kategorija-torte">
+                    <div>
+                        <a href="proizvodi.html" class="item-link">Torte</a>
+                    </div>
+                </div>
+                <div class="col-4 item">
+                    <img src="img/proizvodi/kolaci.jpg" alt="kategorija-kolaci">
+                    <div>
+                        <a href="proizvodi.html" class="item-link">Kolači</a>
+                    </div>
+                </div>
+                <div class="col-4 item">
+                    <img src="img/proizvodi/brunch.jpg" alt="kategorija-brunch">
+                    <div>
+                        <a href="proizvodi.html" class="item-link">Brunch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid p-5 mb-5" id="naslovna-proizvodi">
+            <h2 class="text-center">Izdvojeni proizvodi</h2>
+            <div class="row my-5">
+                <div class="col-3 item">
+                    <img src="img/proizvodi/kolaci.jpg" alt="kategorija-kolaci">
+                    <div>
+                        <a href="#proizvod" class="item-link">Naziv proizvoda</a>
+                        <br>
+                        <span class="item-cijena">9.99 kn</span>
+                    </div>
+                </div>
+                <div class="col-3 item">
+                    <img src="img/proizvodi/kolaci.jpg" alt="kategorija-kolaci">
+                    <div>
+                        <a href="#proizvod" class="item-link">Naziv proizvoda</a>
+                        <br>
+                        <span class="item-cijena">9.99 kn</span>
+                    </div>
+                </div>
+                <div class="col-3 item">
+                    <img src="img/proizvodi/kolaci.jpg" alt="kategorija-kolaci">
+                    <div>
+                        <a href="#proizvod" class="item-link">Naziv proizvoda</a>
+                        <br>
+                        <span class="item-cijena">9.99 kn</span>
+                    </div>
+                </div>
+                <div class="col-3 item">
+                    <img src="img/proizvodi/kolaci.jpg" alt="kategorija-kolaci">
+                    <div>
+                        <a href="#proizvod" class="item-link">Naziv proizvoda</a>
+                        <br>
+                        <span class="item-cijena">9.99 kn</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="proizvodi.html" class="button">Svi proizvodi</a>
+            </div>
+        </section>
+
+        <section class="container-fluid p-5 mb-5">
+            <div class="row">
+                <div class="col-4 offset-1 my-auto">
+                    <h2>Posjetite nas</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cumque neque quia natus ab aliquam excepturi ipsam praesentium beatae est.</p>
+                    <a href="kontakt.html" class="button">Kontakt</a>
+                </div>
+                <div class="col-7">
+                    <img src="/img/prostor.jpg" alt="meetmia">
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container py-5 text-center">
+                <h3>Newsletter</h3>
+                <p>Želite li biti među prvima koji će saznati za popuste i novosti iz MeetMie?</p>
+                <div class="input-group">
+                    <input type="email" class="mx-auto form-control" placeholder="Vaša email adresa . . . ">
+                </div>
+                
+                <a href="#" class="button mt-3">Pretplati se</a>
+            </div>
+        </section>
+        <footer>
+            <div class="container py-5">
+                <div class="row" >
+                    <ul class="col-4">
+                        <li><a href="#">Torte</a></li>
+                        <li><a href="#">Kolači</a></li>
+                        <li><a href="#">Torte</a></li>
+                    </ul>
+                    <ul class="col-4">
+                        <li><a href="#">Naslovnica</a></li>
+                        <li><a href="#">Proizvodi</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                    <ul class="col-4">
+                        <li><a href="#">Opći uvjeti poslovanja</a></li>
+                        <li><a href="#">Česta pitanja</a></li>
+                        <li><a href="#">Pravila privatnosti</a></li>
+                        <li><a href="#">Dostava</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </footer>
     </main>
+
+    
+    <script type="text/javascript">
+        var nav = document.querySelector('nav.nav'),
+            navToggler = document.querySelector('button.nav-toggler');
+
+        navToggler.addEventListener('click', function() {
+            this.classList.toggle('open');
+            nav.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>

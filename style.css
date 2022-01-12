@@ -1,20 +1,105 @@
+/* colors
+light: #F0F3F5
+primary: #6B9DB5
+secondary: #9CC3D5
+dark: #121C21
+dark2: #415158
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    color: #121C21;
 }
 
 main {
-    max-width: 70vw;
-    height: 100vh;
-    margin: auto;
+    margin-top: 40px;
+    padding-top: 20px;
+    min-height: 100vh;
+    margin-left: 0;
 }
 
-#section1 img {
+@media (min-width: 992px) {
+	main {
+        margin-left: 16rem;
+    }
+}
+
+#hero-section-text {
+    vertical-align: middle;
+}
+
+#naslovna-kategorije {
+    background-color: #F0F3F5;
+}
+
+#naslovna-proizvodi {
+    background-color: #F0F3F5;
+}
+
+.button {
+    background-color: #6B9DB5;
+    color: #F0F3F5;
+    border-radius: 1.2rem;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: hsl(199, 30%, 48%);
+    color: #F0F3F5;
+}
+
+.item div {
+    background-color: #9CC3D5;
     width: 100%;
-    float: left;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
-#section2 img {
-    width: 50%;
-    float: left;
+.item-cijena  {
+    font-size: 0.9rem;
+    color: #F0F3F5;
+
+}
+
+.item-link {
+    color: #F0F3F5;
+}
+
+.item-link:hover {
+    color: #415158;
+}
+
+#newsletter {
+    background-color: #9CC3D5;
+}
+
+#newsletter input {
+    max-width: 500px;
+}
+
+footer {
+    background-color: #6B9DB5;
+    color: #F0F3F5;
+}
+
+footer ul {
+    list-style-type: none;
+    line-height: 1.8rem;
+}
+
+footer a {
+    color: #F0F3F5;
+}
+
+footer a:hover {
+    color: #415158;
 }
