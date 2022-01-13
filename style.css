@@ -184,3 +184,19 @@ footer a:hover {
     background-color: #9CC3D5;
     color: #F0F3F5;
 }
+
+#ikonice-kontakt img {
+    width: 3rem;
+}
+
+#ikonice-kontakt a {
+    text-decoration: none;
+}
+#ikonice-kontakt a:hover {
+    filter: invert(70%) sepia(13%) saturate(1017%) hue-rotate(155deg) brightness(83%) contrast(86%);
+}
+
+#kontakt-lokacija {
+    width: 100%;
+    margin: auto;
+}
