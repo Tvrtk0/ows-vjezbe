@@ -136,3 +136,51 @@ footer a {
 footer a:hover {
     color: #415158;
 }
+
+#nav-proizvodi ul {
+    padding-bottom: 2rem;
+}
+
+#nav-proizvodi ul li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+#nav-proizvodi .active {
+    text-decoration: underline;
+    color: #121C21;
+}
+
+#nav-proizvodi ul li a {
+    color: #415158;
+    text-decoration: none;
+}
+
+#nav-proizvodi ul li a:hover {
+    text-decoration: underline;
+    color: #6B9DB5;
+}
+
+.pagination ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.pagination a {
+    color: #121C21;
+    background-color: #F0F3F5;
+    border-radius: 5px;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #9CC3D5;
+    color: #F0F3F5;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #9CC3D5;
+    color: #F0F3F5;
+}
