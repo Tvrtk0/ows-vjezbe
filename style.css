@@ -39,12 +39,12 @@ main {
         background: #6B9DB5;
     }
     ::-moz-selection { /* for Firefox */
-        color: #9CC3D5;
-        background: #F0F3F5;
+        color: #F0F3F5;
+        background: #6B9DB5;
     }
     ::selection {
-        color: #9CC3D5;
-        background: #F0F3F5;
+        color: #F0F3F5;
+        background: #6B9DB5;
     }
 /* } */
 
