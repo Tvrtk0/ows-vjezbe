@@ -200,3 +200,31 @@ footer a:hover {
     width: 100%;
     margin: auto;
 }
+
+#slicni-proizvodi {
+    background-color: #F0F3F5;
+}
+
+#proizvod-slika {
+    overflow: hidden;
+}
+
+#proizvod-slika img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+#proizvod-slika img:hover {
+    transform: scale(1.3);
+}
+
+@media (min-width: 576px) {
+	#proizvod-slika img {
+        height: 500px;
+    }
+}
+
+#kolicina {
+    max-width: 80px;
+}
