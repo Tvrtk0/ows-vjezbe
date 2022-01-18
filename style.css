@@ -51,6 +51,22 @@ main {
     }
 }
 
+@media (max-width: 991px) {       
+    h1 { font-size: 2.2rem;}
+
+    h2 {font-size: 1.853rem;}
+
+    h3 {font-size: 1.463rem;}
+
+    h4 {font-size: 1.25rem;}
+
+    h5 {font-size: 1.1rem;}
+}
+
+a:hover {
+	transition: .3s ease-in-out;
+}
+
 /* @media (min-width: 768px) { */
 	::-webkit-scrollbar {
         width: 0.5em;
@@ -109,13 +125,22 @@ main {
     -webkit-transform: scale(1.05);
 	transform: scale(1.05);
 }
+.item:hover div {
+    background-color: #9CC3D5;
+    color: #121C21;
+	transition: .5s ease-in-out;
+}
+.item:hover .item-link, .item:hover .item-cijena {
+    color: #121C21;
+	transition: .5s ease-in-out;
+}
 
 .item div {
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-color: #9CC3D5;
+    background-color: #6B9DB5;
     width: 100%;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -123,11 +148,11 @@ main {
 .item-cijena  {
     font-size: 0.9rem;
     color: #F0F3F5;
-
 }
 
 .item-link {
     color: #F0F3F5;
+    text-decoration: none;
 }
 
 .item-link:hover {
@@ -154,6 +179,7 @@ footer ul {
 
 footer a {
     color: #F0F3F5;
+    text-decoration: none;
 }
 
 footer a:hover {

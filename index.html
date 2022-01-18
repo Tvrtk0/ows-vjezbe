@@ -71,81 +71,96 @@
             </div>
         </section>
 
-        <section class="container-fluid p-5" id="naslovna-kategorije">
+        <section class="container-fluid pb-5 pt-sm-3 px-sm-5" id="naslovna-kategorije">
             <h2 class="text-center py-3">Naša ponuda</h2>
             <div class="row g-xl-4 g-sm-3 g-0">
                 <div class="col-12 col-sm-6 col-md-4 pb-4 pb-sm-0 item">
-                    <a href="proizvodi.html">
-                        <img src="img/proizvodi/torte.jpg" alt="kategorija-torte">
+                    <a href="proizvodi.html" class="item-link">
+                        <!-- <img src="img/proizvodi/torte.jpg" alt="kategorija-torte"> -->
+                        <picture>
+                            <source media="(min-width:600px) and (max-width:900px)"
+                                    srcset="img/proizvodi/torte-md.jpg">
+                            <source media="(min-width:901px)"
+                                    srcset="img/proizvodi/torte.jpg">
+                            <img src="img/proizvodi/torte-sm.jpg" alt="kategorija-torte">
+                        </picture>
+                        <div>
+                            <span class="text-uppercase">Torte</span>
+                        </div>
                     </a>
-                    <div>
-                        <a href="proizvodi.html" class="item-link text-uppercase">Torte</a>
-                    </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 pb-4 pb-sm-0 item">
-                    <a href="proizvodi.html">
-                        <img src="img/proizvodi/kolaci.jpg" alt="kategorija-kolaci">
+                    <a href="proizvodi.html" class="item-link">
+                        <picture>
+                            <source media="(min-width:600px) and (max-width:900px)"
+                                    srcset="img/proizvodi/kolaci-md.jpg">
+                            <source media="(min-width:901px)"
+                                    srcset="img/proizvodi/kolaci.jpg">
+                            <img src="img/proizvodi/kolaci-sm.jpg" alt="kategorija-kolaci">
+                        </picture>
+                        <div>
+                            <span class="text-uppercase">Kolači</span>
+                        </div>
                     </a>
-                    <div>
-                        <a href="proizvodi.html" class="item-link text-uppercase">Kolači</a>
-                    </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 pb-4 pb-sm-0 item">
-                    <a href="proizvodi.html">
-                        <img src="img/proizvodi/brunch.jpg" alt="kategorija-brunch">
+                    <a href="proizvodi.html" class="item-link">
+                        <picture>
+                            <source media="(min-width:600px) and (max-width:900px)"
+                                    srcset="img/proizvodi/brunch-md.jpg">
+                            <source media="(min-width:901px)"
+                                    srcset="img/proizvodi/brunch.jpg">
+                            <img src="img/proizvodi/brunch-sm.jpg" alt="kategorija-brunch">
+                        </picture>
+                        <div>
+                            <span class="text-uppercase">Brunch</span>
+                        </div>
                     </a>
-                    <div>
-                        <a href="proizvodi.html" class="item-link text-uppercase">Brunch</a>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid p-5 mb-5" id="naslovna-proizvodi">
+        <section class="container-fluid pb-5 pt-3 px-sm-5 mb-5" id="naslovna-proizvodi">
             <div class="text-center">
                 <h2>Izdvojeni proizvodi</h2>
                 <p>Najprodavaniji proizvodi koje vam preporučamo da probate ako još niste!</p>
             </div>
             <div class="row my-3 g-4 g-sm-3 g-lg-3 g-xl-4">
                 <div class="col-12 col-sm-6 col-md-4 col-xl-3 item">
-                    <a href="proizvod.html">
+                    <a href="proizvod.html" class="item-link">
                         <img src="img/proizvodi/lemon-tart.jpg" alt="lemon tart">
+                        <div>
+                            Lemon tart<br>
+                            <span class="item-cijena">18,00 kn</span>
+                        </div>
                     </a>
-                    <div>
-                        <a href="proizvod.html" class="item-link">Lemon tart</a>
-                        <br>
-                        <span class="item-cijena">18,00 kn</span>
-                    </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-xl-3 item">
-                    <a href="proizvod.html">
+                    <a href="proizvod.html" class="item-link">
                         <img src="img/proizvodi/bagel-losos.jpg" alt="bagel losos">
+                        <div>
+                            Bagel losos<br>
+                            <span class="item-cijena">30,00 kn</span>
+                        </div>
                     </a>
-                    <div>
-                        <a href="proizvod.html" class="item-link">Bagel losos</a>
-                        <br>
-                        <span class="item-cijena">30,00 kn</span>
-                    </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-xl-3 item">
-                    <a href="proizvod.html">
+                    <a href="proizvod.html" class="item-link">
                         <img src="img/proizvodi/more-than-eclair.jpg" alt="more than eclair">
+                        <div>
+                            More than eclair<br>
+                            <span class="item-cijena">30,00 kn</span>
+                        </div>
                     </a>
-                    <div>
-                        <a href="proizvod.html" class="item-link">More than eclair</a>
-                        <br>
-                        <span class="item-cijena">30,00 kn</span>
-                    </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 col-xl-3 item">
-                    <a href="proizvod.html">
+                    <a href="proizvod.html" class="item-link">
                         <img src="img/proizvodi/vege-wrap.jpg" alt="vege wrap">
+                        <div>
+                            Vege wrap<br>
+                            <span class="item-cijena">35,00 kn</span>
+                        </div>
                     </a>
-                    <div>
-                        <a href="proizvod.html" class="item-link">Vege wrap</a>
-                        <br>
-                        <span class="item-cijena">35,00 kn</span>
-                    </div>
                 </div>
             </div>
             <div class="text-center mt-3 mt-md-5">
