@@ -225,12 +225,12 @@ footer a:hover {
 }
 
 .pagination a.active {
-    background-color: #9CC3D5;
+    background-color: #6B9DB5;
     color: #F0F3F5;
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #9CC3D5;
+    background-color: #6B9DB5;
     color: #F0F3F5;
 }
 
